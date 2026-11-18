@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOPUP Detailing | Paint Protection Film (PPF) & Luxury Car Detailing</title>
+  <meta name="description" content="TOPUP Detailing — Precision Paint Protection Film (PPF), 10H Ceramic & Graphene Coatings, Multi-Stage Paint Correction, and Luxury Interior Detailing. Call +91 99469 21117." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Montserrat (Display/Logo) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Montserrat:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Montserrat"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              black: '#050507',
+              surface: '#0D0E12',
+              card: '#13151B',
+              border: '#222530',
+              amber: '#F49E15',
+              amberHover: '#FFB02E',
+              amberGlow: 'rgba(244, 158, 21, 0.22)',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Custom Automotive Studio Aesthetics & Micro-Interactions */
+    body {
+      background-color: #050507;
+      color: #F4F5F7;
+      overflow-x: hidden;
+    }
+
+    /* Subtle Carbon Fiber / Studio Micro-Grid Texture */
+    .studio-grid {
+      background-image:
+        radial-gradient(circle at 75% 20%, rgba(244, 158, 21, 0.12), transparent 45%),
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.04), transparent 40%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 44px 44px, 44px 44px;
+    }
+
+    /* Specular Gloss Shimmer on Cards */
+    .gloss-card {
+      background: linear-gradient(145deg, rgba(22, 24, 31, 0.92), rgba(11, 12, 16, 0.98));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gloss-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(244, 158, 21, 0.45);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 24px -6px rgba(244, 158, 21, 0.18);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #050507;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #232631;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #F49E15;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-brand-amber selection:text-black">
+
+  <!-- ===================================================================== -->
+  <!-- TOP UTILITY BAR (Direct Phone + Instagram + Studio Status)            -->
+  <!-- ===================================================================== -->
+  <div class="bg-black border-b border-white/10 text-xs py-2 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-zinc-400">
+        <span class="inline-block w-2 h-2 rounded-full bg-brand-amber animate-pulse"></span>
+        <span class="font-medium tracking-wide uppercase">Climate-Controlled PPF &amp; Detailing Studio</span>
+      </div>
+      <div class="flex items-center gap-4 sm:gap-6">
+        <a href="https://www.instagram.com/topup_detailing_?psln=cHM1a3kybnYwdW02" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-1.5 text-zinc-300 hover:text-brand-amber transition-colors font-medium">
+          <!-- Instagram Icon -->
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+          </svg>
+          <span>@topup_detailing_</span>
+        </a>
+        <a href="tel:+919946921117"
+           class="inline-flex items-center gap-1.5 text-white hover:text-brand-amber transition-colors font-mono font-semibold">
+          <svg class="w-3.5 h-3.5 text-brand-amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>+91 99469 21117</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- STICKY NAVIGATION HEADER WITH EXACT TOPUP DETAILING SVG LOGO          -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-40 bg-black/85 backdrop-blur-xl border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+      <!-- Exact Brand Logo -->
+      <a href="#top" class="flex items-center gap-3.5 group focus:outline-none" aria-label="TOPUP Detailing Home">
+        <!-- Exact SVG Recreation of TOPUP Detailing Logo -->
+        <svg class="h-14 w-auto shrink-0 transition-transform duration-300 group-hover:scale-105" viewBox="0 0 400 375" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TOPUP Detailing Logo">
+          <rect width="400" height="375" rx="28" fill="#000000"/>
+          <!-- "TOP" in heavy geometric uppercase -->
+          <text x="64" y="124" fill="#FFFFFF" font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="78" letter-spacing="-3">TOP</text>
+
+          <!-- White "U" and upper arch of "P" -->
+          <path d="M 66 144
+                   L 106 144
+                   L 106 232
+                   C 106 252, 121 266, 140 266
+                   C 159 266, 174 252, 174 232
+                   L 174 185
+                   C 174 146, 203 118, 240 118
+                   C 272 118, 296 138, 301 168
+                   L 262 168
+                   C 258 157, 250 151, 240 151
+                   C 224 151, 214 163, 214 182
+                   L 214 234
+                   C 214 275, 182 304, 140 304
+                   C 98 304, 66 275, 66 234
+                   Z" fill="#FFFFFF"/>
+
+          <!-- Signature Amber-Orange Upward Arrow forming lower bowl of "P" and rising to top -->
+          <path d="M 222 224
+                   L 254 224
+                   C 256 238, 266 247, 280 247
+                   C 295 247, 305 236, 305 218
+                   L 305 112
+                   L 276 112
+                   L 320 56
+                   L 364 112
+                   L 335 112
+                   L 335 220
+                   C 335 256, 311 280, 279 280
+                   C 248 280, 225 258, 222 224
+                   Z" fill="#F49E15"/>
+
+          <!-- "DETAILING" wide-tracked sub-label -->
+          <text x="200" y="346" text-anchor="middle" fill="#FFFFFF" font-family="'Montserrat', sans-serif" font-weight="800" font-size="25" letter-spacing="10.5">DETAILING</text>
+        </svg>
+
+        <div class="hidden sm:block">
+          <div class="font-display font-black text-white tracking-tight text-lg leading-none">
+            TOPUP <span class="text-brand-amber">DETAILING</span>
+          </div>
+          <div class="text-[11px] uppercase tracking-[0.22em] text-zinc-400 mt-1">
+            PPF &bull; Ceramic &bull; Studio
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-zinc-300">
+        <a href="#services" class="hover:text-brand-amber transition-colors">Services</a>
+        <a href="#process" class="hover:text-brand-amber transition-colors">Studio Process</a>
+        <a href="#instagram" class="hover:text-brand-amber transition-colors">Gallery</a>
+        <a href="#contact" class="hover:text-brand-amber transition-colors">Book Consultation</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+919946921117"
+           class="hidden md:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-white/15 bg-white/5 hover:border-brand-amber/60 hover:bg-white/10 text-sm font-semibold text-white transition-all">
+          <svg class="w-4 h-4 text-brand-amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>Call Now</span>
+        </a>
+
+        <a href="#contact"
+           class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-brand-amber hover:bg-brand-amberHover text-black font-display font-extrabold text-xs sm:text-sm tracking-wide uppercase shadow-lg shadow-brand-amber/20 transition-all">
+          <span>Book Bay</span>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" type="button" aria-label="Toggle Menu"
+                class="lg:hidden p-2.5 rounded-xl border border-white/15 bg-white/5 text-white hover:text-brand-amber">
+          <svg id="menuIconOpen" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg id="menuIconClose" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-brand-surface border-b border-white/10 px-4 pt-3 pb-6 space-y-2">
+      <a href="#services" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-200 hover:bg-white/5 hover:text-brand-amber font-medium">Services &amp; PPF</a>
+      <a href="#process" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-200 hover:bg-white/5 hover:text-brand-amber font-medium">5-Step Studio Protocol</a>
+      <a href="#instagram" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-200 hover:bg-white/5 hover:text-brand-amber font-medium">Instagram Builds (@topup_detailing_)</a>
+      <a href="#contact" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-200 hover:bg-white/5 hover:text-brand-amber font-medium">Book Consultation</a>
+      <div class="pt-3 grid grid-cols-2 gap-3">
+        <a href="tel:+919946921117" class="flex items-center justify-center gap-2 py-3 rounded-xl border border-white/15 bg-white/5 text-white font-semibold text-sm">
+          <span>Call +91 99469 21117</span>
+        </a>
+        <a href="https://wa.me/919946921117?text=Hi%20TOPUP%20Detailing!%20I%20would%20like%20to%20enquire%20about%20PPF%20%2F%20Car%20Detailing."
+           target="_blank" rel="noopener noreferrer"
+           class="flex items-center justify-center gap-2 py-3 rounded-xl bg-emerald-500 text-black font-bold text-sm">
+          <span>WhatsApp Us</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- HERO SECTION                                                          -->
+  <!-- ===================================================================== -->
+  <section id="top" class="relative studio-grid pt-12 pb-20 sm:pt-20 sm:pb-28 border-b border-white/10 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 space-y-7">
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/5 border border-brand-amber/30 text-xs sm:text-sm font-medium text-zinc-200">
+            <span class="w-2 h-2 rounded-full bg-brand-amber"></span>
+            <span>Self-Healing TPU PPF &bull; 10H Ceramic &amp; Graphene Studio</span>
+          </div>
+
+          <h1 class="font-display font-black text-4xl sm:text-5xl lg:text-6xl tracking-tight text-white leading-[1.08]">
+            ELEVATE YOUR PAINT TO <span class="text-brand-amber">CONCOURS PERFECTION.</span>
+          </h1>
+
+          <p class="text-zinc-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+            At <strong class="text-white">TOPUP Detailing</strong>, we engineer invisible armor and mirror-deep gloss for daily drivers, luxury sedans, and performance machines. Precision computer-plotted Paint Protection Film, multi-stage swirl removal, and hydrophobic ceramic shields.
+          </p>
+
+          <!-- Primary & Secondary CTA Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a href="#contact"
+               class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-brand-amber hover:bg-brand-amberHover text-black font-display font-extrabold text-sm sm:text-base uppercase tracking-wide shadow-xl shadow-brand-amber/25 transition-all">
+              <span>Book Studio Slot &amp; Quote</span>
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://wa.me/919946921117?text=Hello%20TOPUP%20Detailing!%20I%20visited%20your%20website%20and%20would%20like%20to%20book%20a%20consultation."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/15 hover:border-brand-amber/50 text-white font-semibold text-sm sm:text-base transition-all">
+              <svg class="w-5 h-5 text-emerald-400" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+              </svg>
+              <span>WhatsApp +91 99469 21117</span>
+            </a>
+          </div>
+
+          <!-- Key Trust Metrics -->
+          <div class="grid grid-cols-3 gap-4 pt-4 border-t border-white/10 max-w-xl">
+            <div>
+              <div class="font-display font-black text-2xl sm:text-3xl text-white">8–10<span class="text-brand-amber">MIL</span></div>
+              <div class="text-xs text-zinc-400 mt-0.5">Self-Healing TPU Armor</div>
+            </div>
+            <div>
+              <div class="font-display font-black text-2xl sm:text-3xl text-white">10<span class="text-brand-amber">H</span></div>
+              <div class="text-xs text-zinc-400 mt-0.5">Ceramic &amp; Graphene Gloss</div>
+            </div>
+            <div>
+              <div class="font-display font-black text-2xl sm:text-3xl text-white">100<span class="text-brand-amber">%</span></div>
+              <div class="text-xs text-zinc-400 mt-0.5">Edge-Wrapped Precision</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Showcase Card (Exact Brand Emblem + Automotive Studio Visual) -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-3xl overflow-hidden border border-white/15 bg-brand-card shadow-2xl">
+            <!-- Studio Car Visual -->
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-black">
+              <img
+                src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?auto=format&fit=crop&w=1200&q=85"
+                onerror="this.onerror=null;this.src='https://placehold.co/900x675/0B0C10/F49E15?text=TOPUP+DETAILING+PPF+STUDIO';"
+                alt="Gloss Black Sports Coupe under TOPUP Detailing Studio Lights"
+                class="w-full h-full object-cover object-center opacity-90 scale-105 hover:scale-100 transition-transform duration-700"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/35 to-transparent"></div>
+
+              <!-- Floating Exact Logo Stamp -->
+              <div class="absolute top-4 left-4 bg-black/90 backdrop-blur-md border border-white/15 rounded-2xl p-2 shadow-xl">
+                <svg class="w-16 h-16" viewBox="0 0 400 375" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="400" height="375" rx="24" fill="#000000"/>
+                  <text x="64" y="124" fill="#FFFFFF" font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="78" letter-spacing="-3">TOP</text>
+                  <path d="M 66 144 L 106 144 L 106 232 C 106 252, 121 266, 140 266 C 159 266, 174 252, 174 232 L 174 185 C 174 146, 203 118, 240 118 C 272 118, 296 138, 301 168 L 262 168 C 258 157, 250 151, 240 151 C 224 151, 214 163, 214 182 L 214 234 C 214 275, 182 304, 140 304 C 98 304, 66 275, 66 234 Z" fill="#FFFFFF"/>
+                  <path d="M 222 224 L 254 224 C 256 238, 266 247, 280 247 C 295 247, 305 236, 305 218 L 305 112 L 276 112 L 320 56 L 364 112 L 335 112 L 335 220 C 335 256, 311 280, 279 280 C 248 280, 225 258, 222 224 Z" fill="#F49E15"/>
+                  <text x="200" y="346" text-anchor="middle" fill="#FFFFFF" font-family="'Montserrat', sans-serif" font-weight="800" font-size="25" letter-spacing="10.5">DETAILING</text>
+                </svg>
+              </div>
+
+              <!-- Spec Tag Top Right -->
+              <div class="absolute top-4 right-4 bg-black/80 backdrop-blur-md border border-brand-amber/40 rounded-full px-3.5 py-1.5 text-xs font-mono text-brand-amber font-semibold">
+                WARRANTY UP TO 10 YRS
+              </div>
+
+              <!-- Bottom Overlay Info -->
+              <div class="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-3">
+                <div>
+                  <span class="text-[11px] uppercase tracking-widest text-brand-amber font-bold">Flagship Protection</span>
+                  <h2 class="font-display font-extrabold text-white text-xl leading-tight">
+                    Stealth Satin &amp; Ultra-Gloss PPF
+                  </h2>
+                </div>
+                <a href="tel:+919946921117"
+                   class="shrink-0 w-11 h-11 rounded-xl bg-brand-amber text-black flex items-center justify-center hover:bg-brand-amberHover transition-colors"
+                   aria-label="Call TOPUP Detailing">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick Studio Highlights Strip -->
+            <div class="p-5 bg-brand-surface grid grid-cols-2 gap-3 text-xs">
+              <div class="flex items-center gap-2.5 text-zinc-300">
+                <span class="w-6 h-6 rounded-lg bg-brand-amber/15 text-brand-amber flex items-center justify-center font-bold">&#10003;</span>
+                <span>Zero-Blade Pre-Cut Patterns</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-zinc-300">
+                <span class="w-6 h-6 rounded-lg bg-brand-amber/15 text-brand-amber flex items-center justify-center font-bold">&#10003;</span>
+                <span>Instant Heat Self-Healing</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-zinc-300">
+                <span class="w-6 h-6 rounded-lg bg-brand-amber/15 text-brand-amber flex items-center justify-center font-bold">&#10003;</span>
+                <span>Anti-Yellowing Aliphatic TPU</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-zinc-300">
+                <span class="w-6 h-6 rounded-lg bg-brand-amber/15 text-brand-amber flex items-center justify-center font-bold">&#10003;</span>
+                <span>IR Curing &amp; Dust-Free Bay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- CORE SERVICES GRID                                                    -->
+  <!-- ===================================================================== -->
+  <section id="services" class="py-20 sm:py-24 bg-brand-surface border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-[0.25em] text-brand-amber font-semibold">Precision Craftsmanship</span>
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-white mt-2">
+            SIGNATURE DETAILING &amp; PPF SERVICES
+          </h2>
+        </div>
+        <p class="text-zinc-400 text-sm sm:text-base max-w-md">
+          Every vehicle undergoes digital paint-depth inspection before a single pad or film touches your clearcoat.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Service 1: Paint Protection Film (PPF) -->
+        <div class="gloss-card rounded-3xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-brand-amber/15 border border-brand-amber/30 flex items-center justify-center text-brand-amber">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-brand-amber/15 text-brand-amber font-semibold">Most Requested</span>
+            </div>
+            <h3 class="font-display font-extrabold text-xl text-white mb-2.5">Paint Protection Film (PPF)</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-5">
+              Optical-grade 8–10 mil aliphatic TPU film that absorbs stone chips, road rash, key scratches, and bird droppings—healing swirl marks automatically under sunlight or warm water.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-300 mb-6">
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> High-Gloss &amp; Matte Stealth Satin Finishes</li>
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Wrapped Edges for Invisible Seams</li>
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> 5, 7 &amp; 10-Year E-Warranty Coverage</li>
+            </ul>
+          </div>
+          <a href="#contact" onclick="selectBookingService('Full-Body Paint Protection Film (PPF)')"
+             class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-white/5 hover:bg-brand-amber hover:text-black text-white font-semibold text-sm transition-all">
+            <span>Enquire PPF Package</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Service 2: 10H Ceramic & Graphene Coating -->
+        <div class="gloss-card rounded-3xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-brand-amber/15 border border-brand-amber/30 flex items-center justify-center text-brand-amber">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-white/10 text-zinc-300">Extreme Gloss</span>
+            </div>
+            <h3 class="font-display font-extrabold text-xl text-white mb-2.5">10H Ceramic &amp; Graphene</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-5">
+              Permanent nano-molecular matrix bonding to clearcoat for liquid-candy depth, 115&deg; hydrophobic water beading, and effortless dirt release in harsh monsoon &amp; tropical UV conditions.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-300 mb-6">
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Multi-Layer Paint, Trim &amp; Glass Protection</li>
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Anti-Static &amp; Water-Spot Resistance</li>
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Includes Multi-Stage Gloss Enhancement</li>
+            </ul>
+          </div>
+          <a href="#contact" onclick="selectBookingService('10H Ceramic / Graphene Coating')"
+             class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-white/5 hover:bg-brand-amber hover:text-black text-white font-semibold text-sm transition-all">
+            <span>Enquire Ceramic Shield</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Service 3: Multi-Stage Paint Correction -->
+        <div class="gloss-card rounded-3xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-brand-amber/15 border border-brand-amber/30 flex items-center justify-center text-brand-amber">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <line x1="12" y1="3" x2="12" y2="6"></line>
+                </svg>
+              </div>
+              <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-white/10 text-zinc-300">Swirl Removal</span>
+            </div>
+            <h3 class="font-display font-extrabold text-xl text-white mb-2.5">Multi-Stage Paint Correction</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-5">
+              Precision rotary and dual-action machine polishing under Scangrip color-match lights to eliminate 95%+ of wash swirls, oxidation, hard-water etching, and buffer trails.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-300 mb-6">
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Ultrasonic Clearcoat Thickness Mapping</li>
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Heavy Cut, Refine &amp; Jeweling Stages</li>
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Restores Showroom Clarity to Used Cars</li>
+            </ul>
+          </div>
+          <a href="#contact" onclick="selectBookingService('Multi-Stage Paint Correction')"
+             class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-white/5 hover:bg-brand-amber hover:text-black text-white font-semibold text-sm transition-all">
+            <span>Book Paint Correction</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Service 4: Luxury Interior Detailing -->
+        <div class="gloss-card rounded-3xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-brand-amber/15 border border-brand-amber/30 flex items-center justify-center text-brand-amber">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path>
+                  <path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z"></path>
+                </svg>
+              </div>
+              <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-white/10 text-zinc-300">Cabin Spa</span>
+            </div>
+            <h3 class="font-display font-extrabold text-xl text-white mb-2.5">Luxury Interior Restoration</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-5">
+              Deep dry-steam sanitization, pH-neutral Nappa &amp; ventilated leather conditioning, Alcantara brushing, AC vent disinfection, and UV matte cockpit dressing.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-300 mb-6">
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Anti-Bacterial Steam &amp; Ozone Treatment</li>
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Interior Leather &amp; Fabric Ceramic Coat</li>
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Zero Greasy Residue OEM Matte Finish</li>
+            </ul>
+          </div>
+          <a href="#contact" onclick="selectBookingService('Interior Restoration & Detailing')"
+             class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-white/5 hover:bg-brand-amber hover:text-black text-white font-semibold text-sm transition-all">
+            <span>Schedule Cabin Detailing</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Service 5: Color Wraps & De-Chroming -->
+        <div class="gloss-card rounded-3xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-brand-amber/15 border border-brand-amber/30 flex items-center justify-center text-brand-amber">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                </svg>
+              </div>
+              <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-white/10 text-zinc-300">Custom Styling</span>
+            </div>
+            <h3 class="font-display font-extrabold text-xl text-white mb-2.5">Vinyl Wraps &amp; De-Chrome</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-5">
+              Transform your vehicle's road presence with cast color-change wraps, piano-black roof wraps, smoked headlight/taillight films, and stealth chrome-delete packages.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-300 mb-6">
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Paint-Safe Cast Vinyl &amp; Colored TPU</li>
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Window Grille &amp; Trim Blackout</li>
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> 100% Reversible Without Paint Damage</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/919946921117?text=Hi%20TOPUP%20Detailing!%20I%20want%20to%20enquire%20about%20Vinyl%20Wrap%20%2F%20De-Chrome%20styling."
+             target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-white/5 hover:bg-brand-amber hover:text-black text-white font-semibold text-sm transition-all">
+            <span>Ask About Custom Wraps</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Service 6: Wheels, Glass & Underbody -->
+        <div class="gloss-card rounded-3xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-brand-amber/15 border border-brand-amber/30 flex items-center justify-center text-brand-amber">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <line x1="12" y1="2" x2="12" y2="8"></line>
+                  <line x1="12" y1="16" x2="12" y2="22"></line>
+                </svg>
+              </div>
+              <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-white/10 text-zinc-300">360&deg; Defense</span>
+            </div>
+            <h3 class="font-display font-extrabold text-xl text-white mb-2.5">Alloys, Glass &amp; Sun-Film</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-5">
+              High-temp ceramic coating for alloy wheels &amp; brake calipers, rain-repellent windshield coating for night visibility, and heat-rejecting nano-ceramic window tints.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-300 mb-6">
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Brake-Dust Repellent Wheel Armor</li>
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> IR Heat-Rejection Sun Control Film</li>
+              <li class="flex items-center gap-2"><span class="text-brand-amber">&#9670;</span> Engine Bay &amp; Underbody Protection</li>
+            </ul>
+          </div>
+          <a href="#contact" onclick="selectBookingService('Front-End Impact PPF')"
+             class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-white/5 hover:bg-brand-amber hover:text-black text-white font-semibold text-sm transition-all">
+            <span>Enquire Complete Protection</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 5-STEP STUDIO BAY PROTOCOL                                            -->
+  <!-- ===================================================================== -->
+  <section id="process" class="py-20 sm:py-24 bg-black border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-mono uppercase tracking-[0.25em] text-brand-amber font-semibold">Zero Shortcuts</span>
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-white mt-2">
+          THE TOPUP 5-STAGE STUDIO PROTOCOL
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+        <div class="p-6 rounded-3xl bg-brand-card border border-white/10">
+          <div class="font-mono text-2xl font-bold text-brand-amber mb-3">01</div>
+          <h3 class="font-display font-bold text-white text-base mb-2">pH-Neutral Snow Foam</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">Two-bucket grit-guard wash, iron fallout removal, and clay-bar decontamination to purge embedded brake dust.</p>
+        </div>
+        <div class="p-6 rounded-3xl bg-brand-card border border-white/10">
+          <div class="font-mono text-2xl font-bold text-brand-amber mb-3">02</div>
+          <h3 class="font-display font-bold text-white text-base mb-2">Micron Paint Audit</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">Digital paint-depth readings across every panel under high-CRI detailing inspection lamps.</p>
+        </div>
+        <div class="p-6 rounded-3xl bg-brand-card border border-white/10">
+          <div class="font-mono text-2xl font-bold text-brand-amber mb-3">03</div>
+          <h3 class="font-display font-bold text-white text-base mb-2">Swirl &amp; Haze Correction</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">Precision machine compounding and jeweling polish so the clearcoat is optically flawless before sealing.</p>
+        </div>
+        <div class="p-6 rounded-3xl bg-brand-card border border-white/10">
+          <div class="font-mono text-2xl font-bold text-brand-amber mb-3">04</div>
+          <h3 class="font-display font-bold text-white text-base mb-2">Dust-Free Application</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">Climate-controlled bay installation of computer-cut TPU PPF with tucked edges or multi-coat 10H Ceramic.</p>
+        </div>
+        <div class="p-6 rounded-3xl bg-brand-card border border-white/10 sm:col-span-2 lg:col-span-1">
+          <div class="font-mono text-2xl font-bold text-brand-amber mb-3">05</div>
+          <h3 class="font-display font-bold text-white text-base mb-2">IR Curing &amp; QC Handover</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">Short-wave infrared curing, edge adhesion check, aftercare kit walkthrough, and digital warranty registration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- INSTAGRAM SHOWCASE (@topup_detailing_)                                -->
+  <!-- ===================================================================== -->
+  <section id="instagram" class="py-20 sm:py-24 bg-brand-surface border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-[0.25em] text-brand-amber font-semibold">Latest Studio Deliveries</span>
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-white mt-2">
+            FOLLOW <span class="text-brand-amber">@TOPUP_DETAILING_</span>
+          </h2>
+        </div>
+        <a href="https://www.instagram.com/topup_detailing_?psln=cHM1a3kybnYwdW02" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2.5 px-5 py-3 rounded-2xl bg-white/5 hover:bg-brand-amber hover:text-black border border-white/15 text-white font-display font-bold text-xs sm:text-sm uppercase tracking-wide transition-all">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+          </svg>
+          <span>View Instagram Reels &amp; Builds</span>
+        </a>
+      </div>
+
+      <!-- 4 Visual Showcase Cards linking to Instagram -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <a href="https://www.instagram.com/topup_detailing_?psln=cHM1a3kybnYwdW02" target="_blank" rel="noopener noreferrer"
+           class="group relative aspect-square rounded-3xl overflow-hidden border border-white/10 bg-black">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80"
+               onerror="this.onerror=null;this.src='https://placehold.co/600x600/0D0E12/F49E15?text=PPF+INSTALLATION';"
+               alt="Full Body Gloss PPF Installation"
+               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <span class="text-[10px] font-mono uppercase text-brand-amber font-bold">Full PPF Armor</span>
+            <p class="text-white font-display font-bold text-xs sm:text-sm mt-0.5">Self-Healing TPU Gloss Wrap</p>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/topup_detailing_?psln=cHM1a3kybnYwdW02" target="_blank" rel="noopener noreferrer"
+           class="group relative aspect-square rounded-3xl overflow-hidden border border-white/10 bg-black">
+          <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80"
+               onerror="this.onerror=null;this.src='https://placehold.co/600x600/0D0E12/F49E15?text=10H+CERAMIC+COATING';"
+               alt="10H Ceramic Coating Mirror Reflection"
+               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <span class="text-[10px] font-mono uppercase text-brand-amber font-bold">10H Graphene</span>
+            <p class="text-white font-display font-bold text-xs sm:text-sm mt-0.5">Mirror Reflection &amp; Hydrophobic Coat</p>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/topup_detailing_?psln=cHM1a3kybnYwdW02" target="_blank" rel="noopener noreferrer"
+           class="group relative aspect-square rounded-3xl overflow-hidden border border-white/10 bg-black">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80"
+               onerror="this.onerror=null;this.src='https://placehold.co/600x600/0D0E12/F49E15?text=PAINT+CORRECTION';"
+               alt="Multi-Stage Paint Correction"
+               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <span class="text-[10px] font-mono uppercase text-brand-amber font-bold">Paint Correction</span>
+            <p class="text-white font-display font-bold text-xs sm:text-sm mt-0.5">Zero-Swirl Rotary &amp; DA Polish</p>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/topup_detailing_?psln=cHM1a3kybnYwdW02" target="_blank" rel="noopener noreferrer"
+           class="group relative aspect-square rounded-3xl overflow-hidden border border-white/10 bg-black">
+          <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80"
+               onerror="this.onerror=null;this.src='https://placehold.co/600x600/0D0E12/F49E15?text=INTERIOR+DETAILING';"
+               alt="Luxury Leather Interior Detailing"
+               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <span class="text-[10px] font-mono uppercase text-brand-amber font-bold">Interior Spa</span>
+            <p class="text-white font-display font-bold text-xs sm:text-sm mt-0.5">Steam Sanitization &amp; Leather Care</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- DIRECT BOOKING & CALLBACK SECTION                                     -->
+  <!-- ===================================================================== -->
+  <section id="contact" class="py-20 sm:py-24 bg-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="rounded-3xl bg-gradient-to-br from-brand-card via-brand-surface to-black border border-white/15 p-7 sm:p-12 grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 space-y-5">
+          <span class="text-xs font-mono uppercase tracking-[0.25em] text-brand-amber font-semibold">Book Your Slot</span>
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-white leading-tight">
+            READY TO PROTECT YOUR MACHINE?
+          </h2>
+          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+            Taking delivery of a brand-new car or restoring your daily driver? Reserve a studio bay in advance for same-day inspection and zero-swirl protection before road debris strikes.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <a href="tel:+919946921117" class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all">
+              <div class="w-11 h-11 rounded-xl bg-brand-amber text-black flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="text-xs text-zinc-400">Direct Studio Hotline &amp; WhatsApp</div>
+                <div class="font-mono font-bold text-lg text-white">+91 99469 21117</div>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/topup_detailing_?psln=cHM1a3kybnYwdW02" target="_blank" rel="noopener noreferrer"
+               class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all">
+              <div class="w-11 h-11 rounded-xl bg-white/10 text-brand-amber flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </div>
+              <div>
+                <div class="text-xs text-zinc-400">Official Instagram DM &amp; Portfolio</div>
+                <div class="font-display font-bold text-base text-white">@topup_detailing_</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Callback Form -->
+        <div class="lg:col-span-6 bg-black/80 border border-white/10 rounded-3xl p-6 sm:p-8">
+          <h3 class="font-display font-extrabold text-xl text-white mb-5">Request a Studio Callback</h3>
+          <form id="callbackForm" class="space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="clientName" class="block text-xs font-semibold text-zinc-400 mb-1.5">Your Name *</label>
+                <input id="clientName" type="text" required placeholder="Enter your name"
+                       class="w-full px-4 py-3 rounded-xl bg-brand-card border border-white/15 focus:border-brand-amber focus:outline-none text-sm text-white" />
+              </div>
+              <div>
+                <label for="clientPhone" class="block text-xs font-semibold text-zinc-400 mb-1.5">Phone / WhatsApp *</label>
+                <input id="clientPhone" type="tel" required placeholder="+91 XXXXX XXXXX"
+                       class="w-full px-4 py-3 rounded-xl bg-brand-card border border-white/15 focus:border-brand-amber focus:outline-none text-sm text-white" />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="clientVehicle" class="block text-xs font-semibold text-zinc-400 mb-1.5">Car Model &amp; Color</label>
+                <input id="clientVehicle" type="text" placeholder="e.g., Black Virtus GT"
+                       class="w-full px-4 py-3 rounded-xl bg-brand-card border border-white/15 focus:border-brand-amber focus:outline-none text-sm text-white" />
+              </div>
+              <div>
+                <label for="clientService" class="block text-xs font-semibold text-zinc-400 mb-1.5">Interested Service</label>
+                <select id="clientService"
+                        class="w-full px-4 py-3 rounded-xl bg-brand-card border border-white/15 focus:border-brand-amber focus:outline-none text-sm text-white">
+                  <option value="Full-Body Paint Protection Film (PPF)">Full-Body Paint Protection Film (PPF)</option>
+                  <option value="Front-End Impact PPF">Front-End Impact PPF</option>
+                  <option value="10H Ceramic / Graphene Coating">10H Ceramic / Graphene Coating</option>
+                  <option value="Multi-Stage Paint Correction">Multi-Stage Paint Correction</option>
+                  <option value="Interior Restoration & Detailing">Interior Restoration &amp; Detailing</option>
+                  <option value="Vinyl Wrap / De-Chrome">Vinyl Wrap / De-Chrome</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit"
+                    class="w-full py-4 rounded-2xl bg-brand-amber hover:bg-brand-amberHover text-black font-display font-extrabold text-sm uppercase tracking-wider shadow-lg shadow-brand-amber/20 transition-all">
+              Confirm Callback &amp; Forward to Studio
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- FOOTER WITH EXACT LOGO                                                -->
+  <!-- ===================================================================== -->
+  <footer class="bg-black border-t border-white/10 pt-14 pb-24 sm:pb-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="flex items-center gap-4">
+        <svg class="h-16 w-auto" viewBox="0 0 400 375" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="TOPUP Detailing Logo">
+          <rect width="400" height="375" rx="24" fill="#000000"/>
+          <text x="64" y="124" fill="#FFFFFF" font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="78" letter-spacing="-3">TOP</text>
+          <path d="M 66 144 L 106 144 L 106 232 C 106 252, 121 266, 140 266 C 159 266, 174 252, 174 232 L 174 185 C 174 146, 203 118, 240 118 C 272 118, 296 138, 301 168 L 262 168 C 258 157, 250 151, 240 151 C 224 151, 214 163, 214 182 L 214 234 C 214 275, 182 304, 140 304 C 98 304, 66 275, 66 234 Z" fill="#FFFFFF"/>
+          <path d="M 222 224 L 254 224 C 256 238, 266 247, 280 247 C 295 247, 305 236, 305 218 L 305 112 L 276 112 L 320 56 L 364 112 L 335 112 L 335 220 C 335 256, 311 280, 279 280 C 248 280, 225 258, 222 224 Z" fill="#F49E15"/>
+          <text x="200" y="346" text-anchor="middle" fill="#FFFFFF" font-family="'Montserrat', sans-serif" font-weight="800" font-size="25" letter-spacing="10.5">DETAILING</text>
+        </svg>
+        <div>
+          <div class="font-display font-black text-white text-lg">TOPUP DETAILING</div>
+          <p class="text-xs text-zinc-400 mt-1">Paint Protection Film (PPF) &bull; Ceramic Coating &bull; Detailing</p>
+          <p class="text-xs text-zinc-500 mt-1">&copy; <span id="currentYear"></span> TOPUP Detailing. All rights reserved.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="tel:+919946921117" class="px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono font-bold text-white">
+          +91 99469 21117
+        </a>
+        <a href="https://www.instagram.com/topup_detailing_?psln=cHM1a3kybnYwdW02" target="_blank" rel="noopener noreferrer"
+           class="px-4 py-2.5 rounded-xl bg-white/5 hover:bg-brand-amber hover:text-black border border-white/10 text-xs font-bold text-white transition-all">
+          Instagram @topup_detailing_
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- FLOATING MOBILE QUICK-ACTION BAR                                      -->
+  <!-- ===================================================================== -->
+  <div class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:bottom-6 z-40 flex items-center gap-3">
+    <a href="tel:+919946921117"
+       class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-2xl bg-black/90 backdrop-blur-md border border-white/20 text-white font-bold text-xs sm:text-sm shadow-2xl hover:border-brand-amber">
+      <svg class="w-4 h-4 text-brand-amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+      <span>Call Studio</span>
+    </a>
+    <a href="https://wa.me/919946921117?text=Hi%20TOPUP%20Detailing!%20I%20would%20like%20to%20book%20a%20PPF%20%2F%20Detailing%20slot."
+       target="_blank" rel="noopener noreferrer"
+       class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-black font-display font-extrabold text-xs sm:text-sm shadow-2xl">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- CUSTOM CONFIRMATION MODAL (No browser alert() used)                   -->
+  <!-- ===================================================================== -->
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+    <div class="bg-brand-card border border-brand-amber/40 rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl text-center space-y-5">
+      <div class="w-14 h-14 rounded-2xl bg-brand-amber/20 text-brand-amber flex items-center justify-center mx-auto text-2xl font-bold">
+        &#10003;
+      </div>
+      <h3 class="font-display font-black text-2xl text-white">Studio Request Ready</h3>
+      <p id="modalSummaryText" class="text-sm text-zinc-300 leading-relaxed"></p>
+      <div class="space-y-2.5 pt-2">
+        <a id="modalWhatsappLink" href="#" target="_blank" rel="noopener noreferrer"
+           class="block w-full py-3.5 rounded-2xl bg-brand-amber hover:bg-brand-amberHover text-black font-display font-extrabold text-sm uppercase tracking-wide">
+          Send Instantly via WhatsApp
+        </a>
+        <button id="closeModalBtn" type="button"
+                class="block w-full py-3 rounded-2xl bg-white/5 hover:bg-white/10 text-zinc-300 text-sm font-semibold">
+          Close Window
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- INTERACTIVE JAVASCRIPT LOGIC                                          -->
+  <!-- ===================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Set current footer year
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      // -------------------------------------------------------------------
+      // 1. Mobile Menu Toggle
+      // -------------------------------------------------------------------
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIconOpen = document.getElementById('menuIconOpen');
+      const menuIconClose = document.getElementById('menuIconClose');
+
+      mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden', !isHidden);
+        menuIconOpen.classList.toggle('hidden', isHidden);
+        menuIconClose.classList.toggle('hidden', !isHidden);
+      });
+
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuIconOpen.classList.remove('hidden');
+          menuIconClose.classList.add('hidden');
+        });
+      });
+
+      // Helper for service card CTA links to pre-select service in callback form
+      window.selectBookingService = function(serviceName) {
+        const serviceSelect = document.getElementById('clientService');
+        if (serviceSelect) {
+          serviceSelect.value = serviceName;
+        }
+      };
+
+      // -------------------------------------------------------------------
+      // 2. Callback Form Submission & Custom Modal
+      // -------------------------------------------------------------------
+      const bookingModal = document.getElementById('bookingModal');
+      const modalSummaryText = document.getElementById('modalSummaryText');
+      const modalWhatsappLink = document.getElementById('modalWhatsappLink');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+
+      document.getElementById('callbackForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('clientName').value.trim();
+        const phone = document.getElementById('clientPhone').value.trim();
+        const vehicle = document.getElementById('clientVehicle').value.trim() || 'Not specified';
+        const service = document.getElementById('clientService').value;
+
+        const waMsg = [
+          `Hi TOPUP Detailing! Callback Request:`,
+          `• Name: ${name}`,
+          `• Phone: ${phone}`,
+          `• Car: ${vehicle}`,
+          `• Service: ${service}`
+        ].join('\n');
+
+        modalSummaryText.textContent = `Thank you, ${name}! Your enquiry for ${service} (${vehicle}) has been prepared. Tap below to send it directly to our studio desk on WhatsApp (+91 99469 21117) for priority scheduling.`;
+        modalWhatsappLink.href = `https://wa.me/919946921117?text=${encodeURIComponent(waMsg)}`;
+
+        bookingModal.classList.remove('hidden');
+        bookingModal.classList.add('flex');
+        e.target.reset();
+      });
+
+      closeModalBtn.addEventListener('click', () => {
+        bookingModal.classList.add('hidden');
+        bookingModal.classList.remove('flex');
+      });
+
+      bookingModal.addEventListener('click', (e) => {
+        if (e.target === bookingModal) {
+          bookingModal.classList.add('hidden');
+          bookingModal.classList.remove('flex');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
